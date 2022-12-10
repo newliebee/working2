@@ -1,3 +1,4 @@
+Notify({Title="Hitbox Expander Loaded";Text="Toggle is Z"..game.Players.LocalPlayer.Name})
 local player = game.Players.LocalPlayer
 local UserInputService = game:GetService("UserInputService")
 
