@@ -1,4 +1,3 @@
-Notify({Title="Shield Bypass Loaded";Text="Toggle is Z"..game.Players.LocalPlayer.Name})
 local player = game.Players.LocalPlayer
 local UserInputService = game:GetService("UserInputService")
 
@@ -20,3 +19,5 @@ game:GetService("RunService").Heartbeat:Connect(function(step)
     end
   end
 end);
+
+Notify({Title="Shield Bypass Loaded";Text="Toggle is Z"..game.Players.LocalPlayer.Name})
