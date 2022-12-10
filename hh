@@ -18,7 +18,7 @@ NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
  Title = "Shield bypass is loaded";
- Text = "it loaded my nigga";
+ Text = "Toggle Key is Z";
  Icon = "";
  Duration = 5;
  Button1 = "okay";
