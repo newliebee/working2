@@ -1,23 +1,19 @@
 local player = game.Players.LocalPlayer
 local UserInputService = game:GetService("UserInputService")
 
-local enabled = false
-
-getgenv()["IrisAd"] = true
+local toggle = false
 
 UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if UserInputService:IsKeyDown(Enum.KeyCode.Z) then
-      enabled = not(enabled)
+    if input.KeyCode == Enum.KeyCode.Z then
+      toggle = not toggle
       wait(1)
     end
 end)
 
 game:GetService("RunService").Heartbeat:Connect(function(step)
-  if enabled == true then
+  if toggle then
     for _,plr in pairs(game:GetService("Players"):GetPlayers()) do
-      plr.BlockingNew2.Value = not(enabled)
+      plr.BlockingNew2.Value = not toggle
     end
   end
-end);
-
-
+end)
